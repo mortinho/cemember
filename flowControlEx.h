@@ -21,6 +21,12 @@ extern "C" {
     void testFor(int);
     
     void testWhile(int);
+    
+    void testDo(int);
+    
+    void testRec(int);
+    
+    void testAll(int);
 
 
 #ifdef __cplusplus

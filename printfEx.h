@@ -18,7 +18,9 @@
 extern "C" {
 #endif
 
-    void floatdemo(void);
+    void tiposEx(void);
+    
+    void floatFomartEx(void);
 
 
 
