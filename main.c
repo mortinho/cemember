@@ -10,21 +10,57 @@
  *
  * Created on 20 de Março de 2018, 21:50
  */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include "printfEx.h"
 #include "flowControlEx.h"
+#include "files.h"
 
+struct S {
+   int i;
+   char* str;
+};
 /*
  * 
  */
+
+int menuPrincipal(){
+
+    int opcao;
+
+    printf("\n\n\t -- Menu do Usuario --\n\n");
+
+    printf("\nSua Escolha: ");
+    scanf("%d",&opcao);
+
+    return opcao;
+}
+
+
 int main(int argc, char** argv) {
     //floatFormatEx();
     //tiposEx();
+    int opcao;
+
+    do{
+        opcao = menuPrincipal();
+        printf("\n");
+        system("@cls||clear");
+        switch(opcao){
+           case 1:{
+               testFile("test.txt");/*txtreally*/
+           }break;
+        }
+   }while(opcao != 10);
+
+
+    struct S s1;
+    s1.i =0;
     //printf("custom conversion: %i\nstdlibs conversion: %i",integer(argv[1]),atoi(argv[1]));
     testAll(50);
-    return (EXIT_SUCCESS);
+    return 0;
 }
 
 void printargs(int len,char **args){

@@ -35,6 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/files.o \
 	${OBJECTDIR}/flowControlEx.o \
 	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/printfEx.o
@@ -63,6 +64,11 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cemember: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cemember ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/files.o: files.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/files.o files.c
 
 ${OBJECTDIR}/flowControlEx.o: flowControlEx.c
 	${MKDIR} -p ${OBJECTDIR}

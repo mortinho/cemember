@@ -4,12 +4,14 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Arquivos de Cabeçalho"
                    projectFiles="true">
+      <itemPath>files.h</itemPath>
       <itemPath>flowControlEx.h</itemPath>
       <itemPath>printfEx.h</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Arquivos de Código-Fonte"
                    projectFiles="true">
+      <itemPath>files.c</itemPath>
       <itemPath>flowControlEx.c</itemPath>
       <itemPath>main.c</itemPath>
       <itemPath>printfEx.c</itemPath>
@@ -40,6 +42,10 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="files.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="files.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="flowControlEx.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="flowControlEx.h" ex="false" tool="3" flavor2="0">
@@ -71,6 +77,10 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="files.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="files.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="flowControlEx.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="flowControlEx.h" ex="false" tool="3" flavor2="0">
